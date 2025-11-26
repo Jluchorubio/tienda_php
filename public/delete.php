@@ -1,9 +1,15 @@
 <?php
-include "conexion.php";
+include __DIR__ . "/../conexion.php";
+
+if (!isset($_GET['id'])) {
+    die("ID no proporcionado");
+}
 
 $id = $_GET['id'];
 
-$stmt = $pdo->prepare("DELETE FROM productos WHERE id = :id");
+$sql = "DELETE FROM productos WHERE id = :id";
+$stmt = $pdo->prepare($sql);
 $stmt->execute(['id' => $id]);
 
-header("Location: list.php");
+header("Location: ../index.php?view=list");
+exit;
