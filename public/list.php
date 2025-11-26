@@ -1,5 +1,6 @@
 <?php
-include "public/conexion.php";
+include __DIR__ . "/../conexion.php";
+
 $stmt = $pdo->query("SELECT * FROM productos");
 $productos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
@@ -50,7 +51,8 @@ $productos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         <div class="acciones">
             <a href="edit.php?id=<?php echo $p["id"]; ?>">Editar</a>
-            <a class="delete" href="delete.php?id=<?php echo $p["id"]; ?>">Eliminar</a>
+            <a href="/tienda_php/public/delete.php?id=<?php echo $p['id']; ?>" class="delete">Eliminar</a>
+
         </div>
 
     </div>

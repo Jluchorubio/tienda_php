@@ -13,44 +13,42 @@
 
     <!-- MENÚ -->
     <ul>
-        <li><a href="registro.php?view=list">Listar productos</a></li>
-        <li><a href="registro.php?view=create">Crear producto</a></li>
+        <li><a href="index.php?view=list">Listar productos</a></li>
+        <li><a href="index.php?view=create">Crear producto</a></li>
     </ul>
 
     <hr>
-
     <?php
-    // Determinar qué mostrar
-    if (isset($_GET['view'])) {
-        $view = $_GET['view'];
+    
+if (isset($_GET['view'])) {
+    $view = $_GET['view'];
 
-        switch($view){
+    switch($view){
 
-            case 'list':
-                include "public/update/list.php";
-                break;
+        case 'list':
+            include __DIR__ . "/public/list.php";
+            break;
 
-            case 'create':
-                include "public/create/create.php";
-                break;
+        case 'create':
+            include __DIR__ . "/public/create/create.php";
+            break;
 
-            case 'edit':
-                include "public/update/edit.php";
-                break;
+        case 'edit':
+            include __DIR__ . "/public/update/edit.php";
+            break;
 
-            case 'delete':
-                include "public/update/delete.php";
-                break;
+        case 'delete':
+            include __DIR__ . "/public/delete.php";
+            break;
 
-            default:
-                echo "<p>Opción no válida.</p>";
-        }
-
-    } else {
-        echo "<p>Selecciona una opción del menú.</p>";
+        default:
+            echo "<p>Opción no válida.</p>";
     }
-    ?>
 
+} else {
+    echo "<p>Selecciona una opción del menú.</p>";
+}
+?>
 </main>
 </body>
 </html>

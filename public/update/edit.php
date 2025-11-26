@@ -1,5 +1,6 @@
 <?php
-include "public/update/conexion.php";
+include __DIR__ . "/../../conexion.php";
+
 $id = $_GET['id'];
 
 $stmt = $pdo->prepare("SELECT * FROM productos WHERE id = :id");

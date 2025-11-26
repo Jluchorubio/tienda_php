@@ -1,5 +1,6 @@
 <?php
-include "public/create/conexion.php";
+include __DIR__ . "/../../conexion.php";
+
 
 $sql = "INSERT INTO productos (nombre, precio) VALUES (:n, :p)";
 $stmt = $pdo->prepare($sql);
@@ -8,4 +9,6 @@ $stmt->execute([
     'p' => $_POST['precio']
 ]);
 
-header("Location: list.php");
+header("Location: ../../index.php?view=list");
+exit;
+
