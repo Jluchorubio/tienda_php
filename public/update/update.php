@@ -9,4 +9,5 @@ $stmt->execute([
     'id' => $_POST['id']
 ]);
 
-header("Location: list.php");
+header("Location: /tienda_php/index.php?view=list");
+exit;
