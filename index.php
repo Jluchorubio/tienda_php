@@ -1,22 +1,29 @@
-<!-- hacker css-->
+<!-- hacer css-->
+<?php include __DIR__ . "/includes/header.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panel Admin</title>
+    <style>
+        h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 60px;
+            color: #091937;
+        }
+
+        p{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            color: #091937;
+        }
+    </style>
 </head>
 <body>
-
 <main>
-    <h1>Productos tienda</h1>
+    <h1>Productos tienda virtual</h1>
     <p>Esta es la sección de admin, decide qué hacer con los productos.</p>
-
-    <!-- MENÚ -->
-    <ul>
-        <li><a href="index.php?view=list">Listar productos</a></li>
-        <li><a href="index.php?view=create">Crear producto</a></li>
-    </ul>
 
     <hr>
     <?php
@@ -51,5 +58,6 @@ if (isset($_GET['view'])) {
 }
 ?>
 </main>
+<?php include __DIR__ . "/includes/footer.php"; ?>
 </body>
 </html>

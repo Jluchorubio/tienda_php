@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <style>
+            
+        </style>
+    </head>
 <body>
 
 <h2>Nuevo producto</h2>
