@@ -42,21 +42,6 @@
         margin-bottom: 20px;
         }
 
-        .op-right a {
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-weight: bolder;
-        font-size: 16px;
-        background: #4CAF50;
-        color: white !important;
-        padding: 10px 15px;
-        border-radius: 8px;
-        text-decoration: none;
-        }
-
-        .op-right a:hover {
-    background: #3d8e41;
-        }
-
         .buscador {
         display: flex;
         align-items: center;
@@ -109,51 +94,69 @@
     max-width: 90%;
 }
 
+/* Título */
 .modal h2 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 26px;
     font-weight: bold;
-    margin-bottom: 20px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
-.modal form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.modal input {
+/* Inputs del formulario */
+.modal form input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #4CAF50;
+    border: 2px solid #4CAF50;
     border-radius: 8px;
     font-size: 15px;
 }
 
-.modal button {
+/* Botón guardar */
+.btn-guardar {
+    background: #4CAF50 !important;
+    color: white !important;
     padding: 10px;
     border-radius: 8px;
-    border: none;
-    cursor: pointer;
     font-size: 15px;
     font-weight: bold;
-}
-
-.btn-guardar {
-    background: #4CAF50;
-    color: white;
+    border: none !important;
+    cursor: pointer;
 }
 
 .btn-guardar:hover {
-    background: #3d8e41;
+    background: #3d8e41 !important;
 }
 
+/* Botón cerrar */
 .btn-cerrar {
-    background: #555;
-    color: white;
+    background: #555 !important;
+    color: white !important;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none !important;
+    cursor: pointer;
 }
 
 .btn-cerrar:hover {
-    background: #333;
+    background: #333 !important;
+}
+
+/* Botón NUEVO PRODUCTO */
+.op-right .crear {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    font-size: 16px;
+    background: #4CAF50 !important;
+    color: white !important;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.op-right .crear:hover {
+    background: #3d8e41 !important;
 }

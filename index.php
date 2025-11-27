@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panel Admin</title>
+        <link rel="stylesheet" href="style.css">
     <style>
         h1{
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -60,5 +61,6 @@ if (isset($_GET['view'])) {
 </main>
 <?php include __DIR__ . "/includes/footer.php"; ?>
 
+<script src="script.js"></script>
 </body>
 </html>

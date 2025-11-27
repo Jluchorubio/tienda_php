@@ -14,13 +14,6 @@ $stmt->execute($param);
 $productos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
 <main class="list">
 
 <nav class="opciones">
@@ -69,8 +62,4 @@ $productos = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <!-- Aquí se carga el formulario -->
     </div>
 </div>
-
-<script src="script.js"></script>
-</body>
-</html>
 
